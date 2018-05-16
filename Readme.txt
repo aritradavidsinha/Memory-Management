@@ -23,7 +23,7 @@ int size;
 struct block_node *nxt;
 }
 Mem_init() function initializes used_list and free_list.
-First eight bytes of the heap memory are used to store first node of the used list. Similarly next eight bytes are used for storing first node of free list.
+First 16 bytes of the heap memory are used to store head node of the used list. Similarly next 16 bytes are used for storing first node of free list.
 
 The main program contains an example code to show how the library functions work.
 
